@@ -2,8 +2,8 @@
   "name": "wolves-client",
   "scripts": {
     "test": "start test.html",
-    "build": "browserify tests/main_view_tests.js -d -o tests/tests.js && browserify app.js -d | exorcist wolves-client.js.map > wolves-client.js",
-    "watch": "start watchify tests/main_view_tests.js --verbose -d -o tests/tests.js && start watchify app.js --verbose -d -o wolves-client.js"
+    "build": "browserify tests/index.js -d -o tests/tests.js && browserify app.js -d | exorcist wolves-client.js.map > wolves-client.js",
+    "watch": "start watchify tests/index.js --verbose -d -o tests/tests.js && start watchify app.js --verbose -d -o wolves-client.js"
   },
   "devDependencies": {
     "mocha": "~2.0.1",
