@@ -1,0 +1,16 @@
+{
+  "name": "wolves-client",
+  "scripts": {
+    "test": "start test.html",
+    "build": "browserify tests/main_view_tests.js -d -o tests/tests.js"
+  },
+  "devDependencies": {
+    "mocha": "~2.0.1",
+    "browserify": "~6.1.0",
+    "stack-mapper": "~0.2.2"
+  },
+  "dependencies": {
+    "ampersand-view": "~7.1.4",
+    "domready": "~1.0.7"
+  }
+}
